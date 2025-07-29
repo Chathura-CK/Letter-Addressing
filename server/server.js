@@ -9,7 +9,8 @@ const PORT = 5000;
 
 app.use(cors(
   {
-  origin: 'https://wonderful-coast-0426eb800.1.azurestaticapps.net'
+  origin: 'https://wonderful-coast-0426eb800.1.azurestaticapps.net',
+  methods: ['GET', 'POST'],
 })
 );
 app.use(express.json());
