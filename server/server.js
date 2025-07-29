@@ -7,7 +7,11 @@ const letterRoutes = require('./routes/letter');
 const app = express();
 const PORT = 5000;
 
-app.use(cors());
+app.use(cors(
+  {
+  origin: 'https://wonderful-coast-0426eb800.1.azurestaticapps.net'
+})
+);
 app.use(express.json());
 app.use(fileUpload()); // Important for file uploads
 
