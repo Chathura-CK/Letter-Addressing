@@ -24,7 +24,7 @@ jobs:
           node-version: '22.x'
 
       - name: npm install, build, and test
-        run: |
+        run:
           node server.js
 
       - name: Upload artifact for deployment job
