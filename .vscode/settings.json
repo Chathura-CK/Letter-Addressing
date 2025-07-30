@@ -2,5 +2,7 @@
     "appService.zipIgnorePattern": [
         "node_modules{,/**}",
         ".vscode{,/**}"
-    ]
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/f0e2d611-a344-499a-923c-98f0233fde23/resourceGroups/letter-addressing-rg/providers/Microsoft.Web/sites/letter-addressing",
+    "appService.deploySubpath": "server"
 }
