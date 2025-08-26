@@ -24,16 +24,6 @@ jobs:
           node-version: '22.x'
 
 
-      - name: Install server dependencies
-        run: |
-          cd server
-          npm install
-
-      - name: Install frontend dependencies and build
-        run: |
-          cd frontend
-          npm install
-          npm run build
 
       - name: Install server dependencies
         run: |
