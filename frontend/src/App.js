@@ -15,7 +15,7 @@ function App() {
     const formData = new FormData();
     formData.append('letter', file);
 
-    const res = await fetch('https://letter-addressing.azurewebsites.net/api/letter/upload', {
+    const res = await fetch('http://localhost:5000/api/letter/upload', {
       method: 'POST',
       body: formData
     });

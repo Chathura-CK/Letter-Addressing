@@ -9,7 +9,7 @@ const UploadLetter = () => {
     e.preventDefault();
     const formData = new FormData();
     formData.append('letter', file);
-    await axios.post('https://letter-addressing.azurewebsites.net/api/letter/upload', formData);
+    await axios.post('/api/letter/upload', formData);
     alert('Uploaded!');
   };
 

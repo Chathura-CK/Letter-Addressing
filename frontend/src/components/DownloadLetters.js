@@ -7,7 +7,7 @@ const DownloadLetters = ({ addresses, templatePath }) => {
     try {
       
       const response = await axios.post(
-        'https://letter-addressing.azurewebsites.net/api/letter/generate',
+        '/api/letter/generate',
         { addresses, templatePath }, // sending array of addresses
         {
           headers: {
