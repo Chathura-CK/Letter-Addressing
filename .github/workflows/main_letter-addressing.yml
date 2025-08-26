@@ -23,11 +23,17 @@ jobs:
         with:
           node-version: '22.x'
 
-      - name: npm install, build, and test
+
+      - name: Install server dependencies
         run: |
+          cd server
           npm install
-          npm run build --if-present
-          npm run test --if-present
+
+      - name: Install frontend dependencies and build
+        run: |
+          cd frontend
+          npm install
+          npm run build
 
       - name: Install server dependencies
         run: |
